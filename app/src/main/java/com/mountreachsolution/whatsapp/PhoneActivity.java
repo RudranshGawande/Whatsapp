@@ -1,12 +1,12 @@
 package com.mountreachsolution.whatsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
 import com.hbb20.CountryCodePicker;
 
@@ -27,11 +27,13 @@ public class PhoneActivity extends AppCompatActivity {
 
         // Optional: Attach EditText to CCP for formatting/validation
         ccp.registerCarrierNumberEditText(etPhone);
-        ccp.setDialogTextColor(ContextCompat.getColor(this, android.R.color.white));
+
 
         btnNext.setOnClickListener(v -> {
             String fullNumber = ccp.getFullNumberWithPlus();
             Toast.makeText(this, "Phone: " + fullNumber, Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(PhoneActivity.this, HomeActivity.class);
+            startActivity(intent);
         });
     }
 }
