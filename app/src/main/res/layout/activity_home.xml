@@ -12,9 +12,10 @@
         android:layout_height="70dp"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
-        android:title="WhatsApp Clone"
+        android:title="WhatsApp"
         app:titleTextColor="@android:color/white"
-        app:menu="@menu/top_app_bar_menu" />
+        app:menu="@menu/top_app_bar_menu"
+        android:paddingTop="20dp" />
 
     <!-- Main Content -->
     <androidx.constraintlayout.widget.ConstraintLayout

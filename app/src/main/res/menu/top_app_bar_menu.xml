@@ -2,15 +2,31 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/action_QR"
-        android:title="New Chat"
-        app:showAsAction="always"
-        android:icon="@drawable/ic_qr" />
-
+    <!-- Camera Icon -->
     <item
         android:id="@+id/action_camera"
-        android:title="Settings"
-        android:icon="@android:drawable/ic_menu_camera"
+        android:icon="@drawable/ic_camera"
+        android:title="Camera"
         app:showAsAction="always" />
+
+    <!-- QR Code Icon -->
+    <item
+        android:id="@+id/action_qr"
+        android:icon="@drawable/ic_qr"
+        android:title="QR Code"
+        app:showAsAction="always" />
+
+    <!-- Search Icon -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <!-- Overflow Menu -->
+    <item
+        android:id="@+id/action_more"
+        android:title="More options"
+        app:showAsAction="never" />
 </menu>
+
